@@ -1,3 +1,5 @@
 import './style.css';
-import logo from './logo.png';
+import {initialPage} from './initialPage';
+import {menu} from './menu';
 
+initialPage();
