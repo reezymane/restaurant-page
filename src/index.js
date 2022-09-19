@@ -2,16 +2,21 @@ import './style.css';
 import {initialPage} from './initialPage';
 import {menu} from './menu';
 
-initialPage;
+initialPage();
 
 // Clears current page contents and adds appropriate tab content
 const navButtons = document.querySelectorAll('button');
 navButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        const mainContents = document.getElementsByClassName('mainContents');
+        const content = document.getElementById('content');
         
-        while(mainContents.item(0).firstChild != null) {
-            mainContents.item(0).removeChild(mainContents.item(0).firstChild);
+        while(content.firstChild != null) {
+            content.removeChild(content.firstChild);
         };
+
+        if(button.textContent === 'Home') {
+            initialPage();
+        } else if (button.textContent === 'Menu');
+            menu();
     });
 });
