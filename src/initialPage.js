@@ -14,12 +14,6 @@ const initialPage = (() => {
 
     header.appendChild(restName);
 
-    // Add logo to header
-    const myLogo = new Image();
-    myLogo.src = logo;
-
-    header.appendChild(myLogo);
-
     // Add nav for Home, Menu and Contact pages
     const nav = document.createElement('nav');
     nav.classList.add('nav');
@@ -38,6 +32,30 @@ const initialPage = (() => {
     nav.appendChild(home);
     nav.appendChild(menu);
     nav.appendChild(contact);
+
+    // Add div for main contents of Home page
+    const mainContents = document.createElement('div');
+    mainContents.classList.add('mainContents');
+
+    content.appendChild(mainContents);
+
+    // Add logo to mainContents
+    const myLogo = new Image();
+    myLogo.src = logo;
+    
+    header.appendChild(myLogo);
+
+    // Add description/history to mainContents
+
+    const description = document.createElement('p');
+    description.textContent = 'World Class Southern-Cajun Cuisine';
+
+    mainContents.appendChild(description);
+
+    const history = document.createElement('p');
+    history.textContent = 'Been Bussin Since 1492';
+
+    mainContents.appendChild(history);
 })();
 
 export {initialPage};
