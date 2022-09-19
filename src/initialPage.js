@@ -43,10 +43,9 @@ const initialPage = (() => {
     const myLogo = new Image();
     myLogo.src = logo;
     
-    header.appendChild(myLogo);
+    mainContents.appendChild(myLogo);
 
     // Add description/history to mainContents
-
     const description = document.createElement('p');
     description.textContent = 'World Class Southern-Cajun Cuisine';
 
@@ -56,6 +55,22 @@ const initialPage = (() => {
     history.textContent = 'Been Bussin Since 1492';
 
     mainContents.appendChild(history);
+
+    // Add welcome message and location
+    const welcomeDiv = document.createElement('footer');
+    welcomeDiv.classList.add('welcomeDiv');
+
+    mainContents.appendChild(welcomeDiv);
+
+    const message = document.createElement('p');
+    message.textContent = 'Come for the food, stay for the itis!'
+
+    welcomeDiv.appendChild(message);
+
+    const location = document.createElement('p');
+    location.textContent = 'Location: 5155 Cookin Soul Ave, Dallas, TX 75226'
+
+    welcomeDiv.appendChild(location);
 })();
 
 export {initialPage};
