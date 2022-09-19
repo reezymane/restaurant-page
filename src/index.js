@@ -16,7 +16,8 @@ navButtons.forEach((button) => {
 
         if(button.textContent === 'Home') {
             initialPage();
-        } else if (button.textContent === 'Menu');
+        } else if (button.textContent === 'Menu') {
             menu();
+        };
     });
 });
