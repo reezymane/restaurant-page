@@ -1,0 +1,15 @@
+/*Removes margin and padding from all elements*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    /*Sets background image and size*/
+    background-image: url(./background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*Maximum page width*/
+    max-width: 1920px;
+}
