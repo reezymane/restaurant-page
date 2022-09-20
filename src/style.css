@@ -8,7 +8,6 @@ body {
     /*Sets background image and size*/
     background-image: url(./img/background.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
 
     /*Maximum page width*/
     max-width: 1920px;
@@ -104,7 +103,12 @@ button {
 
 .beverages,
 .sides,
-.entrees {
+.entrees,
+.contactTitle,
+.chefTitle,
+.contactPic,
+.phone,
+.email {
     padding-left: 40px;
     padding-right: 40px;
 
@@ -137,4 +141,35 @@ button {
     align-self: flex-end;
 
     margin-right: 70px;
+}
+
+.contactTitle {
+    font-size: 25px;
+}
+
+.chefTitle {
+    font-size: 25px;
+    align-self: center;
+
+    margin-bottom: 15px;
+}
+
+.contactPic {
+    width: auto;
+    height: 400px;
+
+    border-radius: 500px;
+
+    align-self: center;
+
+    margin-bottom: 50px;
+}
+
+.phone,
+.email {
+    font-size: 22px;
+}
+
+.email {
+    margin-top: 15px;
 }
