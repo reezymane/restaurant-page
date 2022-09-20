@@ -102,14 +102,6 @@ button {
     cursor: pointer;
 }
 
-.pic {
-    width: 200px;
-    height: 250px;
-
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
 .beverages,
 .sides,
 .entrees {
@@ -124,5 +116,25 @@ button {
     font-size: 35px;
     border-bottom: 2px solid antiquewhite;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.item {
+    font-size: 20px;
+}
+
+.description {
+    padding-left: 25px;
+}
+
+.pic {
+    width: 250px;
+    height: 250px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    align-self: flex-end;
+
+    margin-right: 70px;
 }
