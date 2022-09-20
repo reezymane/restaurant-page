@@ -22,6 +22,15 @@ const initialPage = () => {
     history.classList.add('history');
 
     content.appendChild(history);
+
+    const button = document.querySelectorAll('button');
+    button.forEach((button) => {
+        if (button.textContent === 'Home') {
+            button.style.borderBottom = '2px solid rgb(254, 244, 230)'
+        } else {
+            button.style.property = 'none';
+        };
+    });
 };
 
 export {initialPage};
