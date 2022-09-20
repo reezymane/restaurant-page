@@ -203,6 +203,16 @@ const menu = () => {
     gumboPic.classList.add('pic');
 
     entrees.appendChild(gumboPic);
+
+// Adjusts button underline for current tab
+    const button = document.querySelectorAll('button');
+    button.forEach((button) => {
+        if (button.textContent === 'Menu') {
+            button.style.borderBottom = '2px solid rgb(254, 244, 230)'
+        } else {
+            button.style.borderBottom = 'none';
+        };
+    });
 };
 
 export {menu};
