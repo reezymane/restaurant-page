@@ -1,5 +1,12 @@
 import sangria from './img/sangria.jpeg';
 import libertine from './img/libertine.jpeg';
+import spokes from './img/spokes.jpeg';
+import gator from './img/gator.jpeg';
+import boudin from './img/boudin.jpeg';
+import chicken from './img/chicken.jpeg';
+import shrimp from './img/shrimp.jpg';
+import chops from './img/chops.jpeg';
+import gumbo from './img/chops.jpeg';
 
 
 const menu = () => {
