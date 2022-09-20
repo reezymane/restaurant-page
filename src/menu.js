@@ -12,7 +12,7 @@ import gumbo from './img/chops.jpeg';
 const menu = () => {
     const content = document.getElementById('content');
     
-    // Add beverages to contents div
+// Add beverages to contents div
     const beverages = document.createElement('div');
     beverages.classList.add('beverages');
 
@@ -60,7 +60,7 @@ const menu = () => {
 
     beverages.appendChild(libertinePic);
 
-    // Add sides to contents div
+// Add sides to contents div
     const sides = document.createElement('div');
     sides.classList.add('sides');
 
@@ -107,6 +107,24 @@ const menu = () => {
     gatorPic.classList.add('pic');
 
     sides.appendChild(gatorPic);
+
+    const sideItem3 = document.createElement('p');
+    sideItem3.classList.add('item');
+    sideItem3.textContent = 'Big Dawg Boudin';
+
+    sides.appendChild(sideItem3);
+
+    const side3Description = document.createElement('p');
+    side3Description.classList.add('description');
+    side3Description.textContent = 'The BIGGEST boudin balls you\'ve ever seen, I tell you what';
+
+    sides.appendChild(side3Description);
+
+    const boudinPic = new Image();
+    boudinPic.src = boudin;
+    boudinPic.classList.add('pic');
+
+    sides.appendChild(boudinPic);
 };
 
 export {menu};
