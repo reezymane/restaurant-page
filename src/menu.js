@@ -132,6 +132,12 @@ const menu = () => {
 
     content.appendChild(entrees);
 
+    const entreeTitle = document.createElement('p');
+    entreeTitle.classList.add('title')
+    entreeTitle.textContent = 'Entrees';
+
+    sides.appendChild(entreeTitle);
+
     const entreeItem1 = document.createElement('p');
     entreeItem1.classList.add('item');
     entreeItem1.textContent = 'Big Kissin Chicken';
