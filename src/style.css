@@ -101,3 +101,20 @@ button {
 
     cursor: pointer;
 }
+
+.pic {
+    width: 200px;
+    height: 250px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.beverages,
+.sides,
+.entrees {
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
