@@ -1,4 +1,4 @@
-import logo from './logo.png';
+import logo from './img/logo.png';
 
 const initialPage = () => {
     const content = document.getElementById('content');
@@ -6,6 +6,7 @@ const initialPage = () => {
     // Add logo to contents div
     const myLogo = new Image();
     myLogo.src = logo;
+    myLogo.classList.add('logo');
     
     content.appendChild(myLogo);
 
