@@ -1,3 +1,7 @@
+import sangria from './img/sangria.jpeg';
+import libertine from './img/libertine.jpeg';
+
+
 const menu = () => {
     const content = document.getElementById('content');
     
@@ -25,6 +29,11 @@ const menu = () => {
 
     beverages.appendChild(bev1Description);
 
+    const sangriaPic = new Image();
+    sangriaPic.src = sangria;
+
+    beverages.appendChild(sangriaPic);
+
     const beverageItem2 = document.createElement('p');
     beverageItem2.classList.add('item');
     beverageItem2.textContent = '3 Wheel Motion';
@@ -36,6 +45,11 @@ const menu = () => {
     bev2Description.textContent = 'Simple Syrup, Rosemary, Bourbon, Lemon Juice, Orange Marmalade, Maple Syrup, Orange Juice, Egg Whites';
 
     beverages.appendChild(bev2Description);
+
+    const libertinePic = new Image();
+    libertinePic.src = libertine;
+
+    beverages.appendChild(libertinePic);
 };
 
 export {menu};
