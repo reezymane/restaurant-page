@@ -131,6 +131,24 @@ const menu = () => {
     entrees.classList.add('entrees');
 
     content.appendChild(entrees);
+
+    const entreeItem1 = document.createElement('p');
+    entreeItem1.classList.add('item');
+    entreeItem1.textContent = 'Big Kissin Chicken';
+
+    entrees.appendChild(entreeItem1);
+
+    const entree1Description = document.createElement('p');
+    entree1Description.classList.add('description');
+    entree1Description.textContent = 'Big chicken, fried to perfection with a side of greens, mac n cheese and cornbread';
+
+    entrees.appendChild(entree1Description);
+
+    const chickenPic = new Image();
+    chickenPic.src = chicken;
+    chickenPic.classList.add('pic');
+
+    entrees.appendChild(chickenPic);
 };
 
 export {menu};
