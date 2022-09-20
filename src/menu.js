@@ -149,6 +149,24 @@ const menu = () => {
     chickenPic.classList.add('pic');
 
     entrees.appendChild(chickenPic);
+
+    const entreeItem2 = document.createElement('p');
+    entreeItem2.classList.add('item');
+    entreeItem2.textContent = 'Pimp Sh*t, Shrimp n Grits';
+
+    entrees.appendChild(entreeItem2);
+
+    const entree2Description = document.createElement('p');
+    entree2Description.classList.add('description');
+    entree2Description.textContent = 'A big bowl of classic shrimp n grits, topped with bacon';
+
+    entrees.appendChild(entree2Description);
+
+    const shrimpPic = new Image();
+    shrimpPic.src = shrimp;
+    shrimpPic.classList.add('pic');
+
+    entrees.appendChild(shrimpPic);
 };
 
 export {menu};
