@@ -57,6 +57,12 @@ const menu = () => {
     libertinePic.src = libertine;
 
     beverages.appendChild(libertinePic);
+
+    // Add sides to contents div
+    const sides = document.createElement('div');
+    sides.classList.add('sides');
+
+    content.appendChild(sides);
 };
 
 export {menu};
