@@ -114,7 +114,15 @@ button {
 .sides,
 .entrees {
     padding-left: 40px;
+    padding-right: 40px;
 
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    font-size: 35px;
+    border-bottom: 2px solid antiquewhite;
+
+    margin-bottom: 15px;
 }
