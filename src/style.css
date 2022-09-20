@@ -6,10 +6,21 @@
 
 body {
     /*Sets background image and size*/
-    background-image: url(./background.jpeg);
+    background-image: url(./img/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 
     /*Maximum page width*/
     max-width: 1920px;
+
+    color: rgb(254, 244, 230);
+}
+
+#content {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header,
+footer {
+    background-color: rgba(0, 0, 0, 0.95);
 }
