@@ -6,7 +6,7 @@ import boudin from './img/boudin.jpeg';
 import chicken from './img/chicken.jpeg';
 import shrimp from './img/shrimp.jpg';
 import chops from './img/chops.jpeg';
-import gumbo from './img/chops.jpeg';
+import gumbo from './img/gumbo.jpeg';
 
 
 const menu = () => {
@@ -185,6 +185,24 @@ const menu = () => {
     chopsPic.classList.add('pic');
 
     entrees.appendChild(chopsPic);
+
+    const entreeItem4 = document.createElement('p');
+    entreeItem4.classList.add('item');
+    entreeItem4.textContent = 'Gumbo from tha 3rd Coast';
+
+    entrees.appendChild(entreeItem4);
+
+    const entree4Description = document.createElement('p');
+    entree4Description.classList.add('description');
+    entree4Description.textContent = 'Rell\'s special gumbo recipe, made with fresh fish delivered daily, straight from the coast';
+
+    entrees.appendChild(entree4Description);
+
+    const gumboPic = new Image();
+    gumboPic.src = gumbo;
+    gumboPic.classList.add('pic');
+
+    entrees.appendChild(gumboPic);
 };
 
 export {menu};
