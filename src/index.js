@@ -19,6 +19,8 @@ navButtons.forEach((button) => {
             initialPage();
         } else if (button.textContent === 'Menu') {
             menu();
+        } else if (button.textContent === 'Contact') {
+            contact();
         };
     });
 });
