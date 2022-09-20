@@ -38,6 +38,7 @@ const menu = () => {
 
     const sangriaPic = new Image();
     sangriaPic.src = sangria;
+    sangriaPic.classList.add('pic');
 
     beverages.appendChild(sangriaPic);
 
@@ -55,6 +56,7 @@ const menu = () => {
 
     const libertinePic = new Image();
     libertinePic.src = libertine;
+    libertinePic.classList.add('pic');
 
     beverages.appendChild(libertinePic);
 
@@ -63,6 +65,30 @@ const menu = () => {
     sides.classList.add('sides');
 
     content.appendChild(sides);
+
+    const sidesTitle = document.createElement('p');
+    sidesTitle.classList.add('title')
+    sidesTitle.textContent = 'Sides';
+
+    sides.appendChild(sidesTitle);
+
+    const sideItem1 = document.createElement('p');
+    sideItem1.classList.add('item');
+    sideItem1.textContent = 'Gold Spokes';
+
+    sides.appendChild(sideItem1);
+
+    const side1Description = document.createElement('p');
+    side1Description.classList.add('description');
+    side1Description.textContent = 'A basket of golden fries, served with a side of Souf Sauce';
+
+    sides.appendChild(bev2Description);
+
+    const spokesPic = new Image();
+    spokesPic.src = spokes;
+    spokesPic.classList.add('pic');
+
+    sides.appendChild(spokesPic);
 };
 
 export {menu};
