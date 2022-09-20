@@ -82,13 +82,31 @@ const menu = () => {
     side1Description.classList.add('description');
     side1Description.textContent = 'A basket of golden fries, served with a side of Souf Sauce';
 
-    sides.appendChild(bev2Description);
+    sides.appendChild(side1Description);
 
     const spokesPic = new Image();
     spokesPic.src = spokes;
     spokesPic.classList.add('pic');
 
     sides.appendChild(spokesPic);
+
+    const sideItem2 = document.createElement('p');
+    sideItem2.classList.add('item');
+    sideItem2.textContent = 'Gator Boots';
+
+    sides.appendChild(sideItem2);
+
+    const side2Description = document.createElement('p');
+    side2Description.classList.add('description');
+    side2Description.textContent = 'Crispy fried gator tail, served with cocktail sauce and Souf Sauce';
+
+    sides.appendChild(side2Description);
+
+    const gatorPic = new Image();
+    gatorPic.src = gator;
+    gatorPic.classList.add('pic');
+
+    sides.appendChild(gatorPic);
 };
 
 export {menu};
