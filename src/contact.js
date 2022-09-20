@@ -46,6 +46,16 @@ const contact = () => {
     email.classList.add('email');
 
     content.appendChild(email);
+
+// Adjusts button underline for current tab
+    const button = document.querySelectorAll('button');
+    button.forEach((button) => {
+        if (button.textContent === 'Contact') {
+            button.style.borderBottom = '2px solid rgb(254, 244, 230)'
+        } else {
+            button.style.borderBottom = 'none';
+        };
+    });
 };
 
 export {contact};
