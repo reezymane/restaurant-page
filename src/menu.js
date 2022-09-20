@@ -125,6 +125,12 @@ const menu = () => {
     boudinPic.classList.add('pic');
 
     sides.appendChild(boudinPic);
+
+// Add entrees to contents div
+    const entrees = document.createElement('div');
+    entrees.classList.add('entrees');
+
+    content.appendChild(entrees);
 };
 
 export {menu};
