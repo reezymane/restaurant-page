@@ -14,6 +14,7 @@ body {
     max-width: 1920px;
 
     color: rgb(254, 244, 230);
+    font-family: Apple Chancery, cursive;
 }
 
 #content {
@@ -23,4 +24,10 @@ body {
 header,
 footer {
     background-color: rgba(0, 0, 0, 0.95);
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
