@@ -167,6 +167,24 @@ const menu = () => {
     shrimpPic.classList.add('pic');
 
     entrees.appendChild(shrimpPic);
+
+    const entreeItem3 = document.createElement('p');
+    entreeItem3.classList.add('item');
+    entreeItem3.textContent = 'Chopped and Screwed';
+
+    entrees.appendChild(entreeItem3);
+
+    const entree3Description = document.createElement('p');
+    entree3Description.classList.add('description');
+    entree3Description.textContent = 'Thicc pork chops, guaranteed to leave you full and slowed down';
+
+    entrees.appendChild(entree3Description);
+
+    const chopsPic = new Image();
+    chopsPic.src = chops;
+    chopsPic.classList.add('pic');
+
+    entrees.appendChild(chopsPic);
 };
 
 export {menu};
